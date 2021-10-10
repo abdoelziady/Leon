@@ -1,0 +1,440 @@
+/* =================================================== */
+/* =================================================== */
+/* Start Header  */
+.header
+{
+    padding: 20px;
+}
+.header .container
+{
+display: flex;
+justify-content:space-between;
+}
+.header .header_logo
+{
+    width: 60px;
+    height: 25px;
+}
+.header .header_links
+{
+    position: relative;
+    cursor: pointer;
+}
+.header .header_links .header_links_icon
+{
+    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    transform: .3s;
+}
+.header .header_links .header_links_icon:hover span:nth-child(2)
+{
+width: 100%;
+}
+.header .header_links .header_links_icon span
+{
+margin-bottom: 5px;
+background-color: #000;
+width: 100%;
+height: 2.5px;
+}
+.header .header_links .header_links_icon span:nth-child(2)
+{
+width: 60%;
+transition: .3s;
+}
+
+.header .header_links ul
+{
+    min-width:200px ;
+position: absolute;
+top: calc(100% + 10px);
+right: 0px;
+list-style: none;
+padding: 0px;
+margin: 0px;
+background-color:rgb(236, 234, 234);
+/* display: none; */
+z-index: 1;
+}
+
+.header .header_links_icon:hover  .header ul
+{
+display: block ;
+}
+.header .header_links ul li a 
+{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+    transition: .3s;
+} 
+.header .header_links ul li a:hover
+{
+    padding-left: 30px;
+}
+
+/* End Header  */
+/* =================================================== */
+/* =================================================== */
+/* Start Landing_page */
+.Landing_page
+{
+    background-image: url(../imgs/black-and-white-mountain-photo-vast-xl.jpg);
+    background-size:cover;
+    height: calc(100vh - 65px);
+    width: 100%;
+    position: relative;
+}
+.Landing_page .overlay 
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+ .Landing_page .Landing_page_text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 400px;
+    max-width: 100%;
+}
+.Landing_page .Landing_page_text h1
+{
+     color: var(--maincolor); 
+    font-size: 60px;
+    margin: 0px;
+} 
+.Landing_page .Landing_page_text p 
+{
+    font-size: 19px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* End Landing_page */
+/* =================================================== */
+/* =================================================== */
+/* Start Section Features */
+.Features
+{
+    padding-top: var(--mainpt);
+    padding-bottom: var(--mainpb);
+ background-color: var(--mainbc);
+}
+.Features .container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap:20px;
+}
+.Features .feat 
+{
+    padding: 20px;
+    text-align: center;
+}
+.Features .feat_center
+{
+    box-shadow: 7px 2px 15px rgb(151, 151, 151);
+}
+.Features .feat i 
+{
+    color: var(--maincolor);
+}
+.Features .feat h3 
+{
+    margin: 30px 0px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.Features .feat p
+{
+color: var(--mainpara);
+line-height: 1.8;
+font-size: 16px;
+}
+
+/* End Section Features */
+/* =================================================== */
+/* =================================================== */
+/* Start Section Services */
+.Services
+{
+    padding-top: var(--mainpt);
+    padding-bottom: var(--mainpb);
+}
+.Services .Services_content
+{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+grid-gap: 20px;
+margin-top: 100px;
+}
+.Services .Services_content .Services_content_section
+{
+    display: flex;
+    flex-direction:row ;
+    margin-bottom: 40px;
+}
+.Services .Services_content_section i 
+{
+    flex: 1;
+    color: var(--maincolor);
+    flex-basis: 60px;
+    padding-right: 40px;
+    font-size: 35px;
+}
+.Services .Services_content_section .text 
+{
+    padding-left :10x;
+}
+  .Services .Services_content_section .text h3 {
+    margin: 0 0 20px;
+  }
+  .Services .Services_content_section .text p {
+    color: var(--mainpara);
+    line-height: 1.6;
+  }
+  .Services .Services_content .image 
+  {
+      text-align: center;
+      position: relative;
+  }
+  .Services .Services_content .image img 
+  {
+      width: 270px;
+      height: 350px;
+      padding-top: 35px;
+  
+  }
+  .Services .Services_content .image:before 
+  {
+      position: absolute;
+      content: "";
+      background-color: var(--seccolor);
+      width: 90px;
+      top: -35px;
+      right: 0px;
+      height: calc(100% + 100px);
+    z-index: -1;
+  }
+/* End Section  Services*/
+/* =================================================== */
+/* =================================================== */
+/* Start Section  Portofilo*/
+.Portofilo
+{
+    padding-top: var(--mainpt);
+    padding-bottom: calc(var(--mainpb) + 100px);
+    background-color: var(--mainbc);
+    text-align: center;
+}
+.Portofilo .Portofilo_content
+{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+grid-gap: 20px;
+margin-top: 120px;
+}
+.Portofilo .Portofilo_section
+{
+background-color: #fff;
+}
+.Portofilo .Portofilo_section_center
+{
+    box-shadow: 7px 2px 15px rgb(151, 151, 151);
+
+}
+.Portofilo .Portofilo_section img 
+{
+    max-width: 100%;
+}
+.Portofilo .Portofilo_section .Portofilo_section_info
+{
+    padding:20px;
+}
+.Portofilo .Portofilo_section .Portofilo_section_info h3 
+{
+    margin: 0;
+}
+.Portofilo .Portofilo_section .Portofilo_section_info p 
+{
+    color: var(--mainpara);
+    line-height: 1.7;
+}
+.Portofilo .Portofilo_button
+{
+    margin:100px auto 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 17px 20px;
+    background-color: var(--maincolor);
+    text-transform: capitalize;
+    font-size: 17px;
+    border: none;
+    color: #fff;
+   
+}
+/* End Section Portofilo */
+/* =================================================== */
+/* =================================================== */
+/* Start Section About*/
+.About
+{
+    padding-top: var(--mainpt);
+    padding-bottom: var(--mainpb);
+    text-align: center;
+}
+.About .About_content
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-top: 120px;
+}
+.About .About_content .image 
+{
+    width: 330px;
+    height: 380px;
+    position: relative;
+}
+.About .About_content .image img 
+{
+    max-width: 100%;
+    height: 100%;
+}
+.About .About_content .image::after 
+{
+position: absolute;
+content: "";
+left: -30px;
+top:-40px;
+width: 100px;
+height: calc(100% + 80px);
+background-color: #ebeced;
+z-index: -1;
+}
+.About .About_content .image::before 
+{
+position: absolute;
+content: "";
+right:-130px;
+top:-40px;
+width: 100px;
+height: 250px;
+border-left: 80px solid var(--maincolor);
+border-bottom: 80px solid var(--maincolor);
+z-index: -1;
+}
+.About .About_content .About_text
+{
+    flex-basis: calc(100% - 550px);
+    text-align: left;
+}
+.About .About_content .About_text p
+{
+    line-height: 2;
+}
+.About .About_content .About_text p:first-of-type
+{
+    font-weight: bold;
+    font-size: 17px;
+}
+.About .About_content .About_text hr
+{
+    width: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: var(--maincolor);
+}
+.About .About_content .About_text p:last-child
+{
+    color: var(--mainpara);
+}
+/* End Section About*/
+/* =================================================== */
+/* =================================================== */
+/* Start Section Contact*/
+.Contact
+{
+    padding-top: var(--mainpt);
+    padding-bottom: var(--mainpb);
+    background-color: var(--mainbc);
+    text-align: center;
+}
+.Contact .Contact_content
+{
+margin-top: 80px;
+}
+.Contact .Contact_content .link , 
+.Contact .Contact_content .label
+{
+    font-size: 40px;
+    font-weight: 800;
+}
+.Contact .Contact_content .label
+{
+    margin: 0;
+    margin-bottom: 5px;
+    color: var(--seccolor);
+}
+.Contact .Contact_content .link
+{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: var(--maincolor);
+}
+.Contact .Contact_content .Contact_content_social
+{
+display: flex;
+flex-direction: row;
+justify-content:center;
+}
+.Contact .Contact_content .Contact_content_social i 
+{
+
+    margin-left:15px;
+    margin-top: 15px;
+    color: var(--seccolor);
+}
+.Contact .Contact_content .Contact_content_social p
+{
+    margin-right: 10px;
+   font-weight: 500;
+   font-size: 14px;
+}
+
+/* End Section Contact*/
+/* =================================================== */
+/* =================================================== */
+/* End Section footer*/
+.footer
+{
+   padding: 30px 10px;
+    background-color: var(--seccolor);
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+}
+.footer span 
+{
+    color: var(--maincolor);
+    font-weight: bold;
+}
+/* End Section footer*/
+/* =================================================== */
+/* =================================================== */
